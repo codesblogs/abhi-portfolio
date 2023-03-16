@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+// after creating the Context.js for toggle import the ThemeProvider in index.js
+import {ThemeProvider} from './Context';
 
 ReactDOM.render(
-    <App />,
+  <ThemeProvider>
+    <App />
+  </ThemeProvider>,
   document.getElementById('root')
 );
 

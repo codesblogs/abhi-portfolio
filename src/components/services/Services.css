@@ -1,0 +1,153 @@
+.services{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+}
+
+.s-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.s-left>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.s-left>:nth-child(2){
+     color: var(--orange);
+     font-size: 2.5rem;
+     font-weight: bold;
+}
+
+.s-left>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+
+.s-button{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.s-right{
+    position: relative;
+}
+
+.s-right>*{
+    position: absolute;
+}
+
+.s-blur2{
+    left: 14rem;
+    top: 8rem;
+}
+
+.s-blur1{
+    top: 13rem;
+    left: -18rem;
+}
+@media screen and (max-width: 1200px){
+    .services{
+        margin-top: 2rem;
+        height: 33rem;
+        justify-content: start;
+        margin-left: -3rem;
+    }
+    .s-right{
+        margin-left: -7rem;
+    }
+}
+@media screen and (max-width: 992px){
+    .services{
+        margin-top: 11rem;
+        flex-direction: column;
+        gap: 3rem;
+        height: 50rem;
+        padding: 2rem;
+    }
+    .s-right{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        margin-left: -1rem;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .services{
+        margin-top: 7rem;
+        flex-direction: column;
+        gap: 3rem;
+        height: 72rem;
+        padding: 2rem;
+    }
+    .s-right{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-right>*{
+        position: static;
+        width: auto;
+        margin-right: 12rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .services{
+        margin-top: 7rem;
+        flex-direction: column;
+        gap: 3rem;
+        height: 72rem;
+        padding: 0;
+    }
+    .s-right{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-right>*{
+        position: static;
+        width: auto;
+        margin-right: 12rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .services{
+        margin-top: 7rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        height: 76rem;
+        padding: 0;
+        margin-left: 1rem;
+    }
+    
+    .s-right{
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+    }
+    .s-right>*{
+        position: static;
+    }
+    
+}
+
